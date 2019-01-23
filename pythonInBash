@@ -1,5 +1,8 @@
 #!/bin/bash
 
+############### PYTHON 2.7 EXAMPLE 
+
+
 function printCurrentDate {
 python - <<END
 import datetime
@@ -8,3 +11,15 @@ END
 }
 
 printCurrentDate
+
+############### PYTHON 3.6 EXAMPLE 
+
+function pathlibExample {
+python3.6 - <<END
+from pathlib import Path
+p = Path('.')
+print(p.absolute().as_posix())
+END
+}
+
+pathlibExample
