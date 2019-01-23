@@ -1,0 +1,10 @@
+#!/bin/bash
+
+function printCurrentDate {
+python - <<END
+import datetime
+print datetime.datetime.now()
+END
+}
+
+printCurrentDate
